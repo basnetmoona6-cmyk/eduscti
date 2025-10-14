@@ -9,7 +9,7 @@ import NextTopLoader from "nextjs-toploader";
   description:
     "SCTI",
   keywords:
-    "SCTI Plus Two College, Sindhuli college, Nunthala college, plus two college Nepal, +2 Science, +2 Management, +2 Humanities, NEB college, best college in Sindhuli, Siddha Baba +2, Sidhuli Gurukul colllege, quality education, student success, academic excellence, discipline in education, college in Sindhuli",
+    "SCTI ",
   url: "https://www.SCTI.com",
   openGraph: {
     type: "website",
