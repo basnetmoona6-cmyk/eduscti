@@ -19,7 +19,7 @@ import NextTopLoader from "nextjs-toploader";
       "Join SCTI for diploma courses. Located in Nunthala, Sindhuli, we nurture future leaders with discipline and academic excellence.",
     images: [
       {
-        url: "https://i.ibb.co/8L6fGBtr/ee15ae19-6cb9-428b-8b3a-d0303cd82f45.jpg",
+        url: "https://i.ibb.co/Jf75BQq/scti-logo.jpg",
         width: 1200,
         height: 630,
         alt: "SCTI in Sindhuli",
