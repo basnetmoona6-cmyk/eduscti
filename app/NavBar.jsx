@@ -158,9 +158,9 @@ const NavBar = () => {
           </svg>
         </button>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Column 1: About Siddhababa */}
+          {/* Column 1: About SCTI */}
           <div className="flex flex-col gap-2">
-            <h3 className="text-lg font-semibold text-purple-700 mb-3">About Siddhababa</h3>
+            <h3 className="text-lg font-semibold text-purple-700 mb-3">About SCTI</h3>
             {aboutLinks.map((link) => (
               <Link
                 key={link.name}

@@ -33,7 +33,7 @@ const Contact = () => {
       icon: <MapPin className="w-6 h-6" />,
       title: "Location",
       details: ["Nunthala, Sindhuli"],
-      action: "https://www.google.com/maps/place/Siddhababa+%2B2+Management,+Nunthala/@27.2222029,85.9091194,17z/data=!3m1!4b1!4m6!3m5!1s0x39eb8d095612d5d7:0x1e904eb254a79ffd!8m2!3d27.2222029!4d85.9091194!16s%2Fg%2F11t73g7_pm?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D",
+      action: "https://www.google.com/maps/place/SCTI+%2B2+Management,+Nunthala/@27.2222029,85.9091194,17z/data=!3m1!4b1!4m6!3m5!1s0x39eb8d095612d5d7:0x1e904eb254a79ffd!8m2!3d27.2222029!4d85.9091194!16s%2Fg%2F11t73g7_pm?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D",
       gradient: "from-emerald-500 to-emerald-600",
     },
   ]
@@ -42,13 +42,13 @@ const Contact = () => {
     {
       icon: <Facebook className="w-6 h-6" />,
       name: "Facebook",
-      url: "https://facebook.com/siddhababa",
+      url: "https://facebook.com/SCTI",
       gradient: "from-purple-600 to-purple-700",
     },
     {
       icon: <FaTiktok className="w-6 h-6" />,
       name: "TikTok",
-      url: "https://www.tiktok.com/@siddhababaplustwo?_t=ZS-8x1mQXXM8D1&_r=1",
+      url: "https://www.tiktok.com/@SCTIplustwo?_t=ZS-8x1mQXXM8D1&_r=1",
       gradient: "from-pink-500 to-purple-600",
     },
   ]
@@ -235,7 +235,7 @@ const Contact = () => {
           <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Location</h3>
           <div className="bg-gray-100 rounded-xl h-64 flex items-center justify-center overflow-x-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.6780541234567!2d85.90693091506247!3d27.222202982985567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb8d095612d5d7%3A0x1e904eb254a79ffd!2sSiddhababa%20%2B2%20Management%2C%20Nunthala!5e0!3m2!1sen!2snp!4v1625741234567!5m2!1sen!2snp"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.6780541234567!2d85.90693091506247!3d27.222202982985567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb8d095612d5d7%3A0x1e904eb254a79ffd!2sSCTI%20%2B2%20Management%2C%20Nunthala!5e0!3m2!1sen!2snp!4v1625741234567!5m2!1sen!2snp"
               width="100%"
               height="100%"
               style={{ border: 0 }}

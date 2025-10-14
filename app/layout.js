@@ -5,32 +5,32 @@ import NextTopLoader from "nextjs-toploader";
 
 
   export const metadata = {
-  title: "SiddhaBaba Plus Two College - Quality Education in Nunthala, Sindhuli",
+  title: "SCTI - Quality Education in Nunthala, Sindhuli",
   description:
-    "SiddhaBaba Plus Two College offers quality +2 education in Science, Management, and Humanities streams. Located in Nunthala, Sindhuli, we are committed to academic excellence, discipline, and student success.",
+    "SCTI",
   keywords:
-    "SiddhaBaba Plus Two College, Sindhuli college, Nunthala college, plus two college Nepal, +2 Science, +2 Management, +2 Humanities, NEB college, best college in Sindhuli, Siddha Baba +2, Sidhuli Gurukul colllege, quality education, student success, academic excellence, discipline in education, college in Sindhuli",
-  url: "https://www.siddhababaplustwo.com",
+    "SCTI Plus Two College, Sindhuli college, Nunthala college, plus two college Nepal, +2 Science, +2 Management, +2 Humanities, NEB college, best college in Sindhuli, Siddha Baba +2, Sidhuli Gurukul colllege, quality education, student success, academic excellence, discipline in education, college in Sindhuli",
+  url: "https://www.SCTI.com",
   openGraph: {
     type: "website",
-    url: "https://www.siddhababaplustwo.com",
-    title: "SiddhaBaba Plus Two College - Quality Education in Nunthala, Sindhuli",
+    url: "https://www.SCTI.com",
+    title: "SCTI  - Quality Education in Nunthala, Sindhuli",
     description:
-      "Join SiddhaBaba Plus Two College for NEB +2 programs in Science, Management, and Humanities. Located in Nunthala, Sindhuli, we nurture future leaders with discipline and academic excellence.",
+      "Join SCTI for diploma courses. Located in Nunthala, Sindhuli, we nurture future leaders with discipline and academic excellence.",
     images: [
       {
         url: "https://i.ibb.co/8L6fGBtr/ee15ae19-6cb9-428b-8b3a-d0303cd82f45.jpg",
         width: 1200,
         height: 630,
-        alt: "SiddhaBaba Plus Two College in Sindhuli",
+        alt: "SCTI in Sindhuli",
       },
     ],
   },
   twitter: {
-    handle: "@siddhababacollege", 
-    site: "@siddhababacollege",
+    handle: "@SCTIcollege", 
+    site: "@SCTIcollege",
     cardType: "summary_large_image",
-      authors: [{ name: "Asuura & girlwhocodes" }],
+      authors: [{ name: "munabasnet" }],
   },
 };
 
