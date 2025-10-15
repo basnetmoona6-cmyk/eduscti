@@ -149,7 +149,6 @@ export default function ViewGallery() {
         {!selectedFolderId && (
           <div className="relative w-full h-[60vh] max-sm:h-[30vh] mb-16 overflow-hidden shadow-2xl">
             <Image
-              src="https://i.ibb.co/nMd8Cz2S/f.jpg"
               alt="Gallery Background"
               fill
               className="object-cover"

@@ -79,7 +79,7 @@ export default function AnnouncementPage() {
       <div
         className="w-full text-indigo-800 text-center mt-20 sm:mt-28 shadow-2xl min-h-[300px] sm:min-h-[400px] flex items-center justify-center px-4 sm:px-6 relative"
         style={{
-          backgroundImage: `url('https://i.ibb.co/fzZ34k3V/Whats-App-Image-2025-06-05-at-17-25-27-70173187.jpg')`,
+          
           backgroundSize: "100% 100%", // Adjusts image to match card's width and height
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
