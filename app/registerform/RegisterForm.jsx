@@ -470,7 +470,7 @@ const RegisterForm = () => {
               </div>
               <h2 className="text-2xl font-bold mb-4">Registration Successful!</h2>
               <p className="text-purple-100 mb-6 leading-relaxed">
-                You're pre-registered for Siddha Baba College's {admissionYear} For More Information Inquiry Us 
+                You're pre-registered for SCTI College {admissionYear} For More Information Inquiry Us 
                 confirmation.
               </p>
               <button
