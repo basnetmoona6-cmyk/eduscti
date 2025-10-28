@@ -1,14 +1,15 @@
 import Image from 'next/image';
-import { Facebook, Mail, MessageCircle } from 'lucide-react';
+import { Facebook, MessageCircle } from 'lucide-react';
 import { FaTiktok } from 'react-icons/fa';
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear(); // Dynamically get the current year
+  const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-purple-900 text-white py-8">
+    <footer className="bg-gradient-to-br from-purple-200 via-white to-purple-100 text-gray-800 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center sm:text-left">
+          {/* Logo */}
           <div className="flex justify-center sm:justify-start">
             <div className="relative w-32 h-32">
               <Image
@@ -19,9 +20,11 @@ const Footer = () => {
               />
             </div>
           </div>
+
+          {/* Useful Links */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Useful Links</h3>
-            <ul className="space-y-2 text-sm text-gray-300">
+            <h3 className="text-lg font-bold mb-4 text-purple-700">Useful Links</h3>
+            <ul className="space-y-2 text-sm text-gray-600">
               {[
                 { name: 'Home', route: '/' },
                 { name: 'Programs', route: '/programs' },
@@ -30,59 +33,68 @@ const Footer = () => {
                 { name: 'Contact', route: '/contact' },
               ].map((link) => (
                 <li key={link.name}>
-                  <a href={link.route} className="hover:text-white transition-colors">
+                  <a
+                    href={link.route}
+                    className="hover:text-purple-700 transition-colors"
+                  >
                     {link.name}
                   </a>
                 </li>
               ))}
             </ul>
           </div>
+
+          {/* Courses */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Courses</h3>
-            <ul className="space-y-2 text-sm text-gray-300">
+            <h3 className="text-lg font-bold mb-4 text-purple-700">Courses</h3>
+            <ul className="space-y-2 text-sm text-gray-600">
               {[
-                { name: 'B tech Ed. IT', route: '/programs' },
-                { name: 'B tech Ed. Civil', route: '/programs' },
+                { name: 'B Tech Ed. IT', route: '/programs' },
+                { name: 'B Tech Ed. Civil', route: '/programs' },
                 { name: 'Diploma in Civil', route: '/programs' },
-                 { name: 'Diploma in Agriculture', route: '/programs' },
-               
+                { name: 'Diploma in Agriculture', route: '/programs' },
               ].map((course) => (
                 <li key={course.name}>
-                  <a href={course.route} className="hover:text-white transition-colors">
+                  <a
+                    href={course.route}
+                    className="hover:text-purple-700 transition-colors"
+                  >
                     {course.name}
                   </a>
                 </li>
               ))}
             </ul>
           </div>
+
+          {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Contact Info</h3>
-            <p className="text-sm text-gray-300 leading-relaxed max-w-xs mx-auto sm:mx-0">
+            <h3 className="text-lg font-bold mb-4 text-purple-700">Contact Info</h3>
+            <p className="text-sm text-gray-600 leading-relaxed max-w-xs mx-auto sm:mx-0">
               Sindhuli Community Technical Institute
               <br />
               Nunthala, Sindhuli
               <br />
               <a
                 href="tel:047520365"
-                className="hover:text-yellow-300 block mt-1 transition-colors"
+                className="hover:text-purple-700 block mt-1 transition-colors"
               >
                 047520365
               </a>
               <a
                 href="tel:+9779843546519"
-                className="hover:text-yellow-300 block mt-1 transition-colors"
+                className="hover:text-purple-700 block mt-1 transition-colors"
               >
                 +977-9843546519
               </a>
               <a
                 href="tel:+977981656877"
-                className="hover:text-yellow-300 block mt-1 transition-colors"
+                className="hover:text-purple-700 block mt-1 transition-colors"
               >
                 +977-981656877
               </a>
               <a
                 href="mailto:scti.sindhuli@gmail.com"
-                className="hover:text-yellow-300 block mt-1 transition-colors"
+                className="hover:text-purple-700 block mt-1 transition-colors"
               >
                 scti.sindhuli@gmail.com
               </a>
@@ -91,25 +103,25 @@ const Footer = () => {
         </div>
 
         {/* Bottom section */}
-        <div className="mt-8 border-t border-gray-700 pt-6 text-center">
+        <div className="mt-12 border-t border-gray-300 pt-6 text-center">
           <div className="flex justify-center gap-4 mb-4">
             {[
               {
                 href: 'https://www.facebook.com/profile.php?id=100053642767299',
                 icon: <Facebook size={20} />,
-                bg: 'bg-[#1877F2]',
+                bg: 'bg-gradient-to-br from-purple-500 to-purple-700 text-white',
                 label: 'Facebook',
               },
               {
                 href: 'https://www.tiktok.com/@scti_sindhuli?_t=ZS-8zRVmsXaZzG&_r=1',
                 icon: <FaTiktok size={20} />,
-                bg: 'bg-gradient-to-br from-pink-500 to-purple-600',
+                bg: 'bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-600 text-white',
                 label: 'TikTok',
               },
               {
                 href: 'https://wa.me/+9779843546519',
                 icon: <MessageCircle size={20} />,
-                bg: 'bg-[#25D366]',
+                bg: 'bg-gradient-to-br from-green-400 to-green-600 text-white',
                 label: 'WhatsApp',
               },
             ].map((social, index) => (
@@ -118,24 +130,22 @@ const Footer = () => {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`${social.bg} rounded-full p-2 hover:scale-105 transition-transform`}
+                className={`${social.bg} rounded-full p-3 hover:scale-110 transition-transform shadow-md`}
                 aria-label={social.label}
               >
                 {social.icon}
               </a>
             ))}
           </div>
-          <p className="text-xs text-gray-400 max-w-md mx-auto px-4 sm:px-0">
+          <p className="text-sm text-gray-500 max-w-md mx-auto px-4 sm:px-0">
             © {currentYear} SCTI College. Designed by{' '}
             <a
-              
               target="_blank"
               rel="noopener noreferrer"
-              className="underline hover:text-white transition-colors"
+              className="underline text-purple-600 hover:text-purple-800 transition-colors"
             >
               Muna Basnet
             </a>
-          
             .
           </p>
         </div>
