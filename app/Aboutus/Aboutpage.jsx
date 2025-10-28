@@ -36,7 +36,7 @@ const About = () => {
       <div
         className="relative max-sm:h-[40vh] mt-20 w-full h-screen bg-cover bg-center flex items-center justify-center"
         style={{
-          backgroundImage: `url('https://i.ibb.co/xqSFRNNz/Screenshot-2023-07-24-090523.png')`,
+          backgroundImage: `url('https://i.ibb.co/v67jfssv/ssbb.jpg')`,
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
