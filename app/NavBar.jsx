@@ -20,7 +20,7 @@ const NavBar = () => {
     text: "SCTI College Nunthala, Sindhuli Phone No.047520365/9843546519",
   }
 
-  const inPageSections = ["home", "aboutus", "programs", "gallery", "viewannouncements", "Contact"]
+  const inPageSections = ["home", "aboutus", "programs", "viewannouncements", "Contact"]
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -114,7 +114,6 @@ const NavBar = () => {
     { name: "Home", href: "/", id: "home" },
     { name: "About Us", href: "/Aboutus", id: "aboutus" },
     { name: "Programs", href: "/programs", id: "programs" },
-    { name: "Gallery", href: "/gallery", id: "gallery" },
     { name: "Announcement", href: "/viewannouncements", id: "viewannouncements" },
     { name: "Contact", href: "/contact", id: "Contact" },
   ]
@@ -127,94 +126,33 @@ const NavBar = () => {
     { name: "Our Vision", href: "/Aboutus#vision-mission?tab=vision" },
   ]
 
-  const teacherLinks = [{ name: "Teachers", href: "/teacher" }]
-  const staffLinks = [{ name: "Staff", href: "/staff" }]
-
-  const messageLinks = [
-    { name: "Message from ChairPerson", href: "/messages/chairperson" },
-    { name: "Message from Academic Coordinator", href: "/messages/academic-coordinator" },
-  ]
-
   // Shared About Us Dropdown Component
   const AboutDropdown = ({ isMobile = false }) => (
     <motion.div
       ref={dropdownRef}
       className={`${
-        isMobile ? "relative w-full bg-white shadow-lg z-40" : "absolute left-0 w-full bg-white shadow-2xl z-40"
-      } border-t-2 border-purple-600 overflow-y-auto max-h-[80vh]`}
+        isMobile ? "relative w-full bg-white shadow-lg z-40" : "absolute left-1/2 -translate-x-1/2 w-64 bg-white shadow-2xl z-40"
+      } border-t-2 border-purple-600 overflow-y-auto max-h-[60vh]`}
       style={isMobile ? {} : { top: `${navbarHeight + 2}px` }}
       initial={{ opacity: 0, y: -10 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -10 }}
       transition={{ duration: 0.3 }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 relative">
-        <button
-          onClick={closeDropdown}
-          className="absolute top-4 right-4 text-gray-600 hover:text-purple-700 focus:outline-none"
-        >
-          <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Column 1: About SCTI */}
-          <div className="flex flex-col gap-2">
-            <h3 className="text-lg font-semibold text-purple-700 mb-3">About SCTI</h3>
-            {aboutLinks.map((link) => (
+      <div className="px-4 py-4">
+        <ul className="space-y-1">
+          {aboutLinks.map((link) => (
+            <li key={link.name}>
               <Link
-                key={link.name}
                 href={link.href}
                 onClick={() => handleLinkClick(link.href, "aboutus", false)}
-                className="block text-gray-700 hover:text-purple-700 hover:bg-purple-50 py-1.5 px-2 rounded-md text-sm font-medium transition duration-200 text-left"
+                className="block text-gray-700 hover:text-purple-700 hover:bg-purple-50 py-1 px-2 rounded-md text-sm font-medium transition duration-200 text-left"
               >
                 {link.name}
               </Link>
-            ))}
-          </div>
-          {/* Column 2: Teachers */}
-          <div className="flex flex-col gap-2">
-            <h3 className="text-lg font-semibold text-purple-700 mb-3">Teachers</h3>
-            {teacherLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                onClick={() => handleLinkClick(link.href, null, false)}
-                className="block text-gray-700 hover:text-purple-700 hover:bg-purple-50 py-1.5 px-2 rounded-md text-sm font-medium transition duration-200 text-left"
-              >
-                {link.name}
-              </Link>
-            ))}
-          </div>
-          {/* Column 3: Staff */}
-          <div className="flex flex-col gap-2">
-            <h3 className="text-lg font-semibold text-purple-700 mb-3">Staff</h3>
-            {staffLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                onClick={() => handleLinkClick(link.href, null, false)}
-                className="block text-gray-700 hover:text-purple-700 hover:bg-purple-50 py-1.5 px-2 rounded-md text-sm font-medium transition duration-200 text-left"
-              >
-                {link.name}
-              </Link>
-            ))}
-          </div>
-          {/* Column 4: Messages */}
-          <div className="flex flex-col gap-2">
-            <h3 className="text-lg font-semibold text-purple-700 mb-3">Messages</h3>
-            {messageLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                onClick={() => handleLinkClick(link.href, null, false)}
-                className="block text-gray-700 hover:text-purple-700 hover:bg-purple-50 py-1.5 px-2 rounded-md text-sm font-medium transition duration-200 text-left"
-              >
-                {link.name}
-              </Link>
-            ))}
-          </div>
-        </div>
+            </li>
+          ))}
+        </ul>
       </div>
     </motion.div>
   )
@@ -360,7 +298,7 @@ const NavBar = () => {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
-                      d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
+                      d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18-3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
                     />
                   </svg>
                   <span>Pre-Register</span>
@@ -457,7 +395,7 @@ const NavBar = () => {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
-                      d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
+                      d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18-3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
                     />
                   </svg>
                   <span>Pre-Register</span>
