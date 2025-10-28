@@ -5,6 +5,7 @@ import { Camera, Bell, BookOpen } from "lucide-react";
 
 const Hero = () => {
   const actionButtons = [
+    
     {
       icon: <Camera className="w-3 h-3" />,
       label: "Gallery",
