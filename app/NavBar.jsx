@@ -20,7 +20,7 @@ const NavBar = () => {
     text: "SCTI College Nunthala, Sindhuli Phone No.047520365/9843546519",
   }
 
-  const inPageSections = ["home", "aboutus", "programs", "gallery", "viewannouncements", "Contact"]
+  const inPageSections = ["home", "aboutus", "programs", "gallery", "Contact"]
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -115,7 +115,6 @@ const NavBar = () => {
     { name: "About Us", href: "/Aboutus", id: "aboutus" },
     { name: "Programs", href: "/programs", id: "programs" },
     { name: "Gallery", href: "/gallery", id: "gallery" },
-    { name: "Announcement", href: "/viewannouncements", id: "viewannouncements" },
     { name: "Contact", href: "/contact", id: "Contact" },
   ]
 
