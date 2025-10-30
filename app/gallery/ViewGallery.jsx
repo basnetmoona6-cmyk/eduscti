@@ -8,18 +8,18 @@ export default function ViewGallery() {
   const [selectedImage, setSelectedImage] = useState(null)
 
   const staticImages = [
-    { url: "https://i.ibb.co/YvQvT3W/kids.jpg" },
-    { url: "https://i.ibb.co/YvQvT3W/kids.jpg" },
-    { url: "https://i.ibb.co/YvQvT3W/kids.jpg" },
-    { url: "https://i.ibb.co/YvQvT3W/kids.jpg" },
-    { url: "https://i.ibb.co/YvQvT3W/kids.jpg" },
-    { url: "https://i.ibb.co/YvQvT3W/kids.jpg" },
-    { url: "https://i.ibb.co/YvQvT3W/kids.jpg" },
-    { url: "https://i.ibb.co/YvQvT3W/kids.jpg" },
-    { url: "https://i.ibb.co/YvQvT3W/kids.jpg" },
-    { url: "https://i.ibb.co/YvQvT3W/kids.jpg" },
-    { url: "https://i.ibb.co/YvQvT3W/kids.jpg" },
-    { url: "https://i.ibb.co/YvQvT3W/kids.jpg" },
+    { url: "https://i.ibb.co/JRqtgtGm/Whats-App-Image-2025-10-29-at-10-35-22-6b61e34f.jpg" },
+    { url: "https://i.ibb.co/Mxzf5K4C/Whats-App-Image-2025-10-29-at-10-35-27-7b2aed29.jpg" },
+    { url: "https://i.ibb.co/ksMKwT5j/Whats-App-Image-2025-10-29-at-11-35-00-ded6374a.jpg" },
+    { url: "https://i.ibb.co/Gvppt8WC/Whats-App-Image-2025-10-29-at-11-35-02-954ae206.jpg" },
+    { url: "https://i.ibb.co/Z1ML3Fs3/Whats-App-Image-2025-10-29-at-10-35-27-70e675f2.jpg" },
+    { url: "https://i.ibb.co/b5195F5w/Whats-App-Image-2025-10-30-at-13-25-57-48c93dbe.jpg" },
+    { url: "https://i.ibb.co/WpV13vjn/Whats-App-Image-2025-10-30-at-13-25-59-d8543bc0.jpg" },
+    { url: "https://i.ibb.co/gLbjNbLz/Whats-App-Image-2025-10-30-at-13-26-00-b7aac002.jpg" },
+    { url: "https://i.ibb.co/QFnqs7DR/Whats-App-Image-2025-10-29-at-10-35-24-ef4f824d.jpg" },
+    { url: "https://i.ibb.co/MxnDSnLj/Whats-App-Image-2025-10-29-at-10-35-24-4878aeb7.jpg" },
+    { url: "https://i.ibb.co/8LjSrMHf/ooo.jpg" },
+    { url: "https://i.ibb.co/chkzFyv9/Whats-App-Image-2025-10-29-at-10-35-28-414eb7a8.jpg" },
   ]
 
   const openPreview = (imageUrl) => {

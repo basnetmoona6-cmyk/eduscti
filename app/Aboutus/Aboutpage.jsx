@@ -168,7 +168,7 @@ const About = () => {
             </div>
             <div>
               <Image
-                src="https://i.ibb.co/4ZYZzvV6/activity.jpg"
+                src="https://i.ibb.co/QFnqs7DR/Whats-App-Image-2025-10-29-at-10-35-24-ef4f824d.jpg"
                 alt="Student Activities"
                 width={640}
                 height={256}
@@ -185,7 +185,7 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white p-4 rounded-lg shadow-md text-center">
               <Image
-                src="https://i.ibb.co/nsvLnkcc/IMG-2072.jpg"
+                src="https://i.ibb.co/nsB2gCgp/Whats-App-Image-2025-10-29-at-10-35-27-f3a14e8b.jpg"
                 alt="Experienced Faculty"
                 width={104}
                 height={104}
@@ -198,7 +198,7 @@ const About = () => {
             </div>
             <div className="bg-white p-4 rounded-lg shadow-md text-center">
               <Image
-                src="https://i.ibb.co/Q319z6pR/IMG-20220818-WA0000.jpg"
+                src="https://i.ibb.co/MxnDSnLj/Whats-App-Image-2025-10-29-at-10-35-24-4878aeb7.jpg"
                 alt="Modern Facilities"
                 width={104}
                 height={104}
@@ -211,7 +211,7 @@ const About = () => {
             </div>
             <div className="bg-white p-4 rounded-lg shadow-md text-center">
               <Image
-                src="https://i.ibb.co/vvYmwL41/MG-9494.jpg"
+                src="https://i.ibb.co/chkzFyv9/Whats-App-Image-2025-10-29-at-10-35-28-414eb7a8.jpg"
                 alt="Career Guidance"
                 width={104}
                 height={104}
@@ -224,7 +224,7 @@ const About = () => {
             </div>
             <div className="bg-white p-4 rounded-lg shadow-md text-center">
               <Image
-                src="https://i.ibb.co/LXs3TX1k/vivvanphotography-238.jpg"
+                src="https://i.ibb.co/RGwpMMBP/Whats-App-Image-2025-10-29-at-10-35-27-ae15984c.jpg"
                 alt="Vibrant Community"
                 width={104}
                 height={104}
