@@ -11,11 +11,7 @@ const Hero = () => {
       label: "Gallery",
       href: "/gallery",
     },
-    {
-      icon: <Bell className="w-3 h-3" />,
-      label: "Notice",
-      href: "/viewannouncements",
-    },
+  
     {
       icon: <BookOpen className="w-3 h-3" />,
       label: "Programs",
