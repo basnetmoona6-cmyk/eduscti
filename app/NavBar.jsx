@@ -14,7 +14,7 @@ const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false)
   const router = useRouter()
   const news = useQuery(api.news.getNews) || {
-    text: "SCTI College Nunthala, Sindhuli — Call: 047520365 / 9843546519",
+    text: "SCTI College Nunthala, Sindhuli — Call: 9854041424",
   }
 
   const inPageSections = ["home", "aboutus", "programs", "gallery", "contact"]
