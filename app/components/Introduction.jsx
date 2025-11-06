@@ -35,7 +35,7 @@ const Introduction = () => {
                 Sindhuli Community Technical Institute
               </span>
               <span className="text-gray-700 text-2xl sm:text-3xl mt-1 block">
-                Quality +2 Education in Sindhuli
+                Technical Education in Sindhuli
               </span>
             </h2>
 
