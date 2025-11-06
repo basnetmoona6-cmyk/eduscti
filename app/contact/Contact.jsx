@@ -18,8 +18,7 @@ const Contact = () => {
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Phone",
-      details: ["047520365", "+977-9843546519", "+977-981656877"],
-      action: "tel:+977-9843546519",
+      details: ["9854041424"],
       gradient: "from-purple-500 to-purple-600",
     },
     {
@@ -42,13 +41,13 @@ const Contact = () => {
     {
       icon: <Facebook className="w-6 h-6" />,
       name: "Facebook",
-      url: "https://facebook.com/SCTI",
+      url: "https://www.facebook.com/share/17P8JqtwoH/?mibextid=wwXIfr",
       gradient: "from-purple-600 to-purple-700",
     },
     {
       icon: <FaTiktok className="w-6 h-6" />,
       name: "TikTok",
-      url: "https://www.tiktok.com/@SCTIplustwo?_t=ZS-8x1mQXXM8D1&_r=1",
+      url: "https://www.tiktok.com/@scti_sindhuli?_r=1&_t=ZS-91AzLpNoN1k",
       gradient: "from-pink-500 to-purple-600",
     },
   ]
@@ -115,12 +114,7 @@ const Contact = () => {
               </motion.div>
             ))}
           </div>
-          <div className="bg-white p-6 rounded-2xl shadow-lg text-center">
-            <p className="text-gray-700 text-lg">
-              Premier educational institution in Nunthala, Sindhuli. KU affiliated college preparing students for
-              successful careers in business and management.
-            </p>
-          </div>
+         
         </motion.div>
 
         {/* Contact & Social Section */}
@@ -179,7 +173,7 @@ const Contact = () => {
               <h3 className="text-xl font-bold mb-2">WhatsApp</h3>
               <p className="text-green-100 mb-4 text-sm">Quick answers to your questions</p>
               <a
-                href="https://wa.me/+9779843546519"
+                href="https://wa.me/+9779854041424"
                 target="_blank"
                 rel="noopener noreferrer"
               >

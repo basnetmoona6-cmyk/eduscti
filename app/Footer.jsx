@@ -29,7 +29,6 @@ const Footer = () => {
                 { name: 'Home', route: '/' },
                 { name: 'Programs', route: '/programs' },
                 { name: 'Gallery', route: '/gallery' },
-                { name: 'Announcement', route: '/announcements' },
                 { name: 'Contact', route: '/contact' },
               ].map((link) => (
                 <li key={link.name}>
@@ -75,23 +74,12 @@ const Footer = () => {
               Nunthala, Sindhuli
               <br />
               <a
-                href="tel:047520365"
+                href="tel:9854041424"
                 className="hover:text-purple-700 block mt-1 transition-colors"
               >
-                047520365
+                9854041424
               </a>
-              <a
-                href="tel:+9779843546519"
-                className="hover:text-purple-700 block mt-1 transition-colors"
-              >
-                +977-9843546519
-              </a>
-              <a
-                href="tel:+977981656877"
-                className="hover:text-purple-700 block mt-1 transition-colors"
-              >
-                +977-981656877
-              </a>
+              
               <a
                 href="mailto:scti.sindhuli@gmail.com"
                 className="hover:text-purple-700 block mt-1 transition-colors"
@@ -107,19 +95,19 @@ const Footer = () => {
           <div className="flex justify-center gap-4 mb-4">
             {[
               {
-                href: 'https://www.facebook.com/profile.php?id=100053642767299',
+                href: 'https://www.facebook.com/share/17P8JqtwoH/?mibextid=wwXIfr',
                 icon: <Facebook size={20} />,
                 bg: 'bg-gradient-to-br from-purple-500 to-purple-700 text-white',
                 label: 'Facebook',
               },
               {
-                href: 'https://www.tiktok.com/@scti_sindhuli?_t=ZS-8zRVmsXaZzG&_r=1',
+                href: 'https://www.tiktok.com/@scti_sindhuli?_r=1&_t=ZS-91AzLpNoN1k',
                 icon: <FaTiktok size={20} />,
                 bg: 'bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-600 text-white',
                 label: 'TikTok',
               },
               {
-                href: 'https://wa.me/+9779843546519',
+                href: 'https://wa.me/+9779854041424',
                 icon: <MessageCircle size={20} />,
                 bg: 'bg-gradient-to-br from-green-400 to-green-600 text-white',
                 label: 'WhatsApp',

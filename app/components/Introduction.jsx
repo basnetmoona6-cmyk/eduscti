@@ -41,13 +41,9 @@ const Introduction = () => {
 
             {/* Description */}
             <p className="text-gray-700 text-lg leading-relaxed">
-              Sindhuli Community Technical Institute (SCTI) is a premier educational institution dedicated to academic excellence, leadership, and holistic growth. 
-              Affiliated with the National Examinations Board (NEB), we empower students through innovative teaching and real-world learning experiences.
+              Sindhuli Community Technical Institute (SCTI) is a reputed institution in Sindhuli that offers both technical and higher education programs. It runs CTEVT-affiliated diploma and TSLC courses in fields like engineering, agriculture, and health, focusing on skill-based learning. The institute also offers bachelor-level programs in affiliation with Kathmandu University (KU) to provide advanced academic and professional opportunities for students.
             </p>
-            <p className="text-gray-600 leading-relaxed">
-              Our programs blend rigorous academics with practical exposure, guided by experienced faculty. 
-              SCTI fosters a culture of confidence, creativity, and community preparing students for success in higher studies and professional life.
-            </p>
+            
 
             {/* Features */}
             <div className="flex flex-wrap gap-4 pt-4">
@@ -57,7 +53,7 @@ const Introduction = () => {
               </div>
               <div className="flex items-center space-x-2 bg-white/80 backdrop-blur-sm border border-purple-100 px-4 py-2 rounded-lg shadow-sm">
                 <Award className="w-5 h-5 text-purple-600" />
-                <span className="text-sm text-gray-700 font-medium">NEB Affiliated</span>
+                <span className="text-sm text-gray-700 font-medium"> KU Affiliated</span>
               </div>
             </div>
 
