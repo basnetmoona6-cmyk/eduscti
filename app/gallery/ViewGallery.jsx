@@ -21,8 +21,7 @@ export default function ViewGallery() {
     { url: "https://i.ibb.co/8LjSrMHf/ooo.jpg" },
     { url: "https://i.ibb.co/chkzFyv9/Whats-App-Image-2025-10-29-at-10-35-28-414eb7a8.jpg" },
      { url: "https://i.ibb.co/tMzSZd8R/Whats-App-Image-2025-10-30-at-13-25-59-d8543bc0.jpg" },
-     { url: "https://i.ibb.co/svpBDCG3/Whats-App-Image-2025-10-29-at-11-35-01-fa5455c6.jpg"}
-  ]
+    
 
   const openPreview = (imageUrl) => {
     setSelectedImage(imageUrl)
